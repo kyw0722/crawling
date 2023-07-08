@@ -143,9 +143,9 @@ def insertData(dic_list, coll):
 def main():
     article_dic_list = make_dic_list()
 
-    conn = pymongo.MongoClient(host='10.200.10.203', port=27017)
-    db_name = "test_yw"
-    coll_name = "news_ytn"
+    conn = pymongo.MongoClient(host='HOST_IP', port=27017)
+    db_name = "DB_NAME"
+    coll_name = "COLLECTION_NAME"
     db = conn.get_database(db_name)
     coll = db.get_collection(coll_name)
 
